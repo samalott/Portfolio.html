@@ -76,3 +76,17 @@ p {
     align-items: center;
     height: auto;
  }
+
+#Projects {
+    width: 60vw;
+    float: left;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.thumbnails {
+}
+
+.thumbnail-1 {
+}
