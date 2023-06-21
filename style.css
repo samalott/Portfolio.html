@@ -208,15 +208,15 @@ p {
     -5px 5px 10px 10px rgba(100, 149, 237, 0.25);
 }
 
-#pepper_grinder_thumbnail {
-    background-image: url("pepper_grinder_thumbnail.png");
+#peppermill_thumbnail {
+    background-image: url("peppermill_thumbnail.png");
     background-color:lightblue;
     background-position: 50%;
     background-size: 175%;
     background-repeat: no-repeat;
 }
 
-#pepper_grinder_thumbnail:hover {
+#peppermill_thumbnail:hover {
     box-shadow: 
     5px 5px 10px 10px rgba(173, 216, 230, 0.25), 
     -5px -5px 10px 10px rgba(173, 216, 230, 0.25), 
@@ -318,10 +318,10 @@ p {
     position: relative;
     flex-flow: row wrap;
     justify-content: center;
-    height: 30vw;
     margin-left: 4vw;
     margin-right: 4vw;
     border-radius: 20px;
+    padding-bottom: 1vw;
 }
 
 #cell {
@@ -330,8 +330,7 @@ p {
 
 .header {
     position: relative;
-    height: 4vw;
-    width: 45vw;
+    width: 30vw;
     font-weight: bolder;
     font-size: calc(.6 * 3vw);
     line-height: calc(.8 * 3vw);
@@ -345,16 +344,18 @@ p {
 }
 
 .body {
-    height: 12vw;
-    width: 45vw;
+    width: 30vw;
     font-weight: normal;
-    font-size: calc(.4 * 3vw);
-    line-height: calc(.6 * 3vw);
-    text-align: justify;
+    font-size: 1.3vw; 
+    line-height: 1.5vw;
+    text-align: left;
     box-sizing: border-box; 
-    padding-bottom: 1vw;
     padding-left: 2vw;
-    padding-right: 2vw;
+    padding-right: 3vw;
+}
+
+.opportunity_points {
+    padding-bottom: 1vw;
 }
 
 #hmw {
@@ -448,14 +449,17 @@ p {
 
 #fieldtrip_description {
     position: relative;
-    font-size: calc(.5 * 3vw);
-    line-height: calc(.7 * 3vw);
-    text-align: justify;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    display: block;
+    text-align: center;
+    font-size: 2.4vw;
+    line-height: 3vw;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    margin-left: 8vw;
+    margin-right: 8vw;
     margin-top: 26vw;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .fieldtrip_intro {
@@ -982,7 +986,6 @@ p {
     text-align: center;
     margin-top: 17vw;
     margin-left: 4vw;
-    border-radius: 15px;
 }
 
 #post-it { 
@@ -1011,7 +1014,6 @@ p {
     width: 15vw;
     height: 20vw;
     background-size: cover;
-    border-radius: 10px;
 }
 
 .booza_event_2 {
@@ -1020,7 +1022,6 @@ p {
     width: 15vw;
     height: 20vw;
     background-size: cover;
-    border-radius: 10px;
     margin-left: 2vw;
     margin-right: 2vw;
 }
@@ -1031,7 +1032,6 @@ p {
     width: 15vw;
     height: 20vw;
     background-size: cover;
-    border-radius: 10px;
     margin-right: 2vw;
 }
 
@@ -1099,8 +1099,7 @@ p {
     margin: 1vw;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    background-color: coral;
-    border-radius: 15px;
+    background-color:aquamarine;
 }
 
 .fieldtrip_ideation_left {
@@ -1109,31 +1108,136 @@ p {
     width: 40%;
     margin: 1vw;
     flex-flow: row wrap;
+    padding: 2vw;
+    box-sizing: border-box;
     justify-content: space-evenly;
-    background-color:darkviolet;
+    /* background-color:black; */
+    /* color: white; */
     border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: 500; 
 }
 
 #fieldtrip_ideation {
     position: relative;
-    background-color:darkturquoise;
-    color:white;
-    width: 12vw;
+    background-color:honeydew;
+    color:teal;
+    width: 18vw;
     height: 12vw;
-    margin-left: .5vw;
-    margin-right: .5vw;
-    margin-top: 2%;
+    margin-left: 0vw;
+    margin-right: 0vw; 
+    margin-top: 3%;
     margin-bottom: 3%;
     padding: 1%;
     box-sizing: border-box;
-    border-radius: 15%;
+    border-radius: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
-    font-size: 1.35vw;
+    font-size: 1.5vw;
     line-height: 1.75vw;
+    font-weight: 600; 
+}
+
+.fieldtrip_focus_left {
+    position: relative;
+    display: flex;
+    width: 25%;
+    margin: 1vw;
+    margin-bottom: 5vw;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color:aquamarine;
+    border-radius: 15px;
+    box-sizing: border-box;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+    line-height: 2.5vw;
     font-weight: 500; 
+    padding: 2%;
+}
+
+.fieldtrip_focus_right {
+    position: relative;
+    display: flex;
+    width: 68%;
+    margin: 1vw;
+    margin-bottom: 5vw;
+    flex-flow: row wrap;
+    padding: 2vw;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    /* background-color:black; */
+    /* color: white; */
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: 500; 
+}
+
+#fieldtrip_prototyping {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+/* .foam_prototype_description {
+    position: relative;
+    width: 20vw;
+    background-size: 150%;
+    background-position: 50% 50%;
+    margin-left: 1vw;
+    background-color: azure;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.foam_prototype {
+    position: relative;
+    background-image: url("foam_prototype.JPG");
+    width: 20vw;
+    height: 20vw;
+    background-size: 175%; 
+    background-position: 50% 50%;
+    margin-right: 3vw;
+    border-radius: 0px 10px 10px 0px;
+} */
+
+.sketch_prototype_description {
+    position: relative;
+    width: 50vw;
+    background-size: 150%;
+    background-position: 50% 50%;
+    margin-left: 3vw;
+    padding: 2vw;
+    background-color:rgb(207, 255, 231);
+    border-radius: 10px 0px 0px 10px;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 3vw;
+    font-weight: 500; 
+}
+
+.sketch_prototype {
+    position: relative;
+    background-image: url("sketch_prototype.jpg");
+    width: 30vw;
+    height: 30vw;
+    background-size: contain;
+    background-position: 50% 50%;
+    margin-right: 1vw;
+    border-radius: 0px 10px 10px 0px;
+    box-sizing: border-box; 
+    padding: 10vw; 
 }
 
 .booza_prototype_1 {
@@ -1143,6 +1247,7 @@ p {
     height: 40vw;
     background-size: 150%;
     background-position: 50% 50%;
+    border-radius: 10px;
 }
 
 .booza_prototype_2 {
@@ -1154,6 +1259,7 @@ p {
     background-position: 50% 50%;
     margin-left: 2vw;
     margin-right: 2vw;
+    border-radius: 10px;
 }
 
 .booza_prototype_3 {
@@ -1163,6 +1269,7 @@ p {
     height: 40vw;
     background-size: 150%;
     background-position: 50% 50%;
+    border-radius: 10px;
 }
 
 #fieldtrip_video {
@@ -1174,16 +1281,17 @@ p {
 }
 
 .fieldtrip_final {
-    background-color: black;
+    background-color:rgb(32, 169, 116);
     color:honeydew;
+    padding-bottom: 4vw;
 }
 
 #fieldtrip_final_title {
     position: relative;
     display: block;
-    font-size: calc(1 * 10vw);
+    font-size: 14vw;
     font-family: 'Delaney Black';
-    line-height: calc(.8 * 3vw);
+    line-height: 14vw;
     text-align: center;
     color:lemonchiffon;
     margin-left: auto;
@@ -1193,21 +1301,325 @@ p {
 }
 
 #fieldtrip_slides {
-    display: block;
+    display: flex;
     position: relative;
     flex-flow: row wrap;
-    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding: 0%;
-    padding-bottom: 5%;
+    padding: 1%;
+    padding-bottom: 1%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.slide {
+#slide_description {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+
+.slide_intro {
+    background-image: url("fieldtrip_product_overview.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 96vw;
+    height: 54vw; 
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+}
+
+.roadmap_description {
+    width: 40vw;
+    height: 35vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
+    font-weight: 500; 
+}
+
+.slide_roadmap {
+    background-image: url("fieldtrip_roadmap.png");
+    background-size: 125%; 
+    background-position: 75% 50%;
+    position: relative;
+    display: block; 
+    width: 50vw;
+    height: 35vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+}
+
+.slide_boompop {
+    background-image: url("boompop_itinerary_laptop.png");
+    background-size: 115%;
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 50vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2,vw;
+}
+
+.slide_packaging {
+    background-image: url("packaging_render22.png");
+    background-size: 125%;
+    background-position: 40% 60%;
+    position: relative;
+    display: block; 
+    width: 50vw;
+    height: 30vw;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+}
+
+.setup_screens {
+    width: 90vw;
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+}
+
+.setup_screen_description {
+    width: 30vw;
+    height: 25vw;
+    text-align: center;
+    font-size: 2vw; 
+    line-height: 2.8vw;
+    font-weight: 500;  
+}
+
+.slide_setup1 {
+    background-image: url("setup_screen_1.png");
+    background-size: 125%; 
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 25vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slide_setup2 {
+    background-image: url("setup_screen_2.png");
+    background-size: 125%;
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 25vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slide_setup3 {
+    background-image: url("setup_screen_3.png");
+    background-size: 125%;
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 25vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slide_setup4 {
+    background-image: url("setup_screen_4.png");
+    background-size: 125%;
+    background-position: 50% 50%;
+    position: relative;
+    display: block; 
+    width: 25vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.slide_matching {
+    background-image: url("matching_screen.png");
+    background-position: 50% 50%;
+    background-size: 105%;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 21vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 45px;
+}
+
+.game_description_intro {
+    position: relative;
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 2.1vw;
+    line-height: 2.6vw;
+    font-weight: 500;
+    background-color: aliceblue;
+    color: black;
+    padding: 2vw;
+}
+
+.game_description {
+    width: 45vw;
+    height: 25vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
+    font-weight: 500; 
+}
+
+.slide_bubblegame {
+    background-image: url("bubble_game_render.gif");
+    background-position: 50% 50%;
+    background-size: 105%;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 21vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 45px;
+}
+
+.slide_rotationgame {
+    background-image: url("rotation_game_render.gif");
+    background-position: 50% 50%;
+    background-size: 105%;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 21vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 45px;
+}
+
+.slide_drawinggame {
+    background-image: url("drawing_game_render.gif");
+    background-position: 50% 50%;
+    background-size: 105%;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 21vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 45px;
+}
+
+.slide_countdown {
+    background-image: url("countdown_screen.gif");
+    background-position: 50% 50%;
+    background-size: 105%;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 21vw; 
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    border-radius: 45px;
+}
+
+.post_activity {
+    width: 90vw;
+    background-color: azure;
+    color: black;
+    border-radius: 10px;
+    margin-bottom: 4vw;
+    padding-bottom: 1vw;
+}
+
+.report_description {
+    width: 40vw;
+    height: 25vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.4vw;
+    font-weight: 500;
+}
+
+.slide_report {
+    background-image: url("report_screen.png");
+    background-size: 110%;
+    background-position: 50% 50%;
+    position: relative; 
+    display: block;  
+    width: 44vw;
+    height: 40vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+}
+
+.debrief_description {
+    width: 45vw;
+    height: 40vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.4vw;
+    font-weight: 500; 
+}
+
+.slide_debrief {
+    background-image: url("facilitators_guide.png");
+    background-size: 175%;
+    background-position: 100% 50%; 
+    position: relative; 
+    display: block;  
+    width: 40vw;
+    height: 40vw;
+    margin-top: 0vw;
+    margin-bottom: 2vw;
+    /* background-color: aquamarine; */
+}
+
+.slide14 {
+    background-image: url("fieldtrip_gamethree_description.png");
+    background-size: contain;
+    position: relative;
+    display: block; 
+    width: 44vw;
+    height: 25vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+
+#works_cited{
     position: relative;
     display: block;
     margin-top: 4vw;
-    margin-bottom: 4vw;
+    margin-bottom: 10vw;
 }
 
 
@@ -1269,14 +1681,16 @@ p {
 
 #pawdramat_description {
     position: relative;
-    font-size: calc(.5 * 3vw);
-    line-height: calc(.7 * 3vw);
-    text-align: justify;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 22vw;
-    padding-top: 4%;
-    padding-bottom: 2%;
+    display: block;
+    text-align: center;
+    font-size: 2.4vw;
+    line-height: 3vw;
+    font-weight: bolder;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 25vw; 
+    padding-top: 2%;
+    padding-bottom: 3%;
 }
 
 .pawdramat_intro {
@@ -1338,7 +1752,7 @@ p {
 .pawdramat_criteria_details {
     position: relative;
     width: 29vw;
-    height: 13vw;
+    /* height: 13vw; */
     margin-left: .5vw;
     margin-right: .5vw;
     margin-top: 0%;
@@ -1347,9 +1761,10 @@ p {
     box-sizing: border-box;
     border-radius: 5%;
     justify-content: space-around;
-    text-align: justify;
+    text-align: center;
     display: flex;
-    font-size: calc(1.2 * 1vw);
+    font-size: 1.5vw;
+    line-height: 1.8vw;
     font-weight: normal;
     background-color:white;
 }
@@ -1419,6 +1834,14 @@ p {
 
 .pawdramat_final {
     padding-bottom: 10%;
+    justify-content: space-around;
+    text-align: left;
+    display: flex;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    font-weight: normal; 
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 
@@ -1434,9 +1857,11 @@ p {
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vw;
     height: 130vw;
     width: 100vw;
 }
+
 #accessibility_description {
     position: relative;
     font-size: calc(.5 * 3vw);
@@ -1451,6 +1876,157 @@ p {
     margin-top: 5%;
 }
 
+
+
+
+/*PEPPER MILL***************************************************************/
+
+#peppermill_render {
+    position: relative;
+    background-image: url("peppermill_render_transparent.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    height: 60vw;
+    width: 45vw;
+}
+
+#peppermill_description {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 2.4vw;
+    line-height: 3vw;
+    font-weight: bolder;
+    font-stretch: ultra-expanded;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 26vw;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+
+.peppermill_intro {
+    margin-top: 5%;
+}
+
+#peppermill_sketches {
+    position: relative;
+    background-image: url("peppermill_final_design.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    height: 60vw;
+    width: 45vw;
+}
+
+#peppermill_slides {
+    display: flex;
+    position: relative;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    padding: 1%;
+    padding-bottom: 10%;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.slide_peppermill_history {
+    background-image: url("peppermill_history.png");
+    background-size: 100%; 
+    background-position: 50% -50%; 
+    background-repeat: no-repeat;
+    position: relative;
+    display: block; 
+    width: 60vw;
+    height: 35vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+}
+
+.history_description {
+    width: 30vw;
+    height: 35vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
+    font-weight: 500; 
+}
+
+.slide_final_peppermill {
+    background-image: url("peppermill_final_design.png");
+    background-size: 100%; 
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    position: relative; 
+    display: block; 
+    width: 50vw; 
+    height: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+}
+
+.final_peppermill_description {
+    width: 40vw;
+    height: 40vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
+    font-weight: 500; 
+}
+
+.slide_peppermill_foam {
+    background-image: url("peppermill_foam_mockup.jpg");
+    background-size: 100%; 
+    background-position: 50% 50%; 
+    background-repeat: no-repeat;
+    position: relative;
+    display: block; 
+    width: 45vw;
+    height: 60vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+}
+
+.foam_description {
+    width: 45vw;
+    height: 60vw;
+    margin-top: 2vw;
+    margin-bottom: 5vw;
+    align-items: center;
+    text-align: left;
+    font-size: 1.6vw;
+    line-height: 2.2vw;
+    font-weight: 500; 
+}
+
+/* #peppermill_foam {
+    position: relative;
+    background-image: url("peppermill_foam_mockup.jpg");
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vw;
+    height: 60vw;
+    width: 45vw;
+} */
 
 
 
