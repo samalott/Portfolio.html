@@ -101,6 +101,16 @@ h5 {
     margin-bottom: 1%;
 }
 
+h6 {
+    position: relative;
+    font-family: 'Comfortaa', 'Montserrat', Arial, sans-serif;
+    font-size: 1.75vw;
+    line-height: 2.5vw;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 1%;
+}
+
 p {
     font-size: 1.5vw;
     line-height: calc(1.1 * 1.5vw);
@@ -421,6 +431,11 @@ p {
     background-repeat: no-repeat;
     height: 40vw;
     width: 100%;
+}
+
+.fieldtrip_logo {
+    font-family: 'Delaney Black';
+    padding-left: 0.5%;
 }
 
 #fieldtrip_title {
@@ -1633,20 +1648,76 @@ p {
     margin-top: 2vw;
     margin-bottom: 0vw;
     border-radius: 10px; 
-
 }
 
-.slide14 {
-    background-image: url("fieldtrip_gamethree_description.png");
-    background-size: contain;
-    position: relative;
-    display: block; 
-    width: 44vw;
-    height: 25vw;
+#acknowledgements {
+    background-color:lightseagreen;
+    width: 96vw;
     margin-top: 2vw;
-    margin-bottom: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw;
+    border-radius: 25px; 
 }
 
+.sponsors {
+    margin-bottom: 0%;
+    padding-bottom: 2vw;
+}
+
+#fieldtrip_sponsors {
+    position: relative;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: -5%;
+    margin-bottom: 0%;
+    padding: 2%;
+    justify-content: space-around;
+    align-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.venture_labs {
+    background-image: url("venturelabs_logo.png");
+    background-size: 90%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 3vw;
+    width: 15vw;
+    box-sizing: content-box;
+    background-color: white;
+    align-self: center;
+}
+
+.gapsa {
+    background-image: url("gapsa_logo.png");
+    background-size: 100%;
+    box-sizing: border-box;
+    height: 10vw;
+    width: 10vw;
+    align-self: center;
+}
+
+.wohasu {
+    background-image: url("WOHASU_logo.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    height: 10vw;
+    width: 20vw; 
+    align-self: center;
+}
+
+.ipd {
+    background-image: url("penn_ipd_logo.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    box-sizing: border-box;
+    height: 20vw;
+    width: 25vw;
+    align-self: center;
+}
 
 #works_cited{
     position: relative;
@@ -1914,36 +1985,34 @@ p {
 
 /*PEPPER MILL***************************************************************/
 
-#peppermill_render {
-    position: relative;
-    background-image: url("peppermill_render_transparent.png");
-    background-size: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
+
+.course_description {
+    margin-bottom: 0%;
+    padding-bottom: 2vw;
+    width: 90vw;
+    margin-top: 2vw;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5vw;
-    height: 60vw;
-    width: 45vw;
+    padding: 1vw;
+    border-radius: 25px; 
 }
 
 #peppermill_description {
     position: relative;
     display: block;
-    text-align: center;
-    font-size: 2.4vw;
-    line-height: 3vw;
-    font-weight: bolder;
-    font-stretch: ultra-expanded;
-    margin-left: 8vw;
-    margin-right: 8vw;
-    margin-top: 26vw;
+    text-align: left;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight: normal;
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 2vw;
     padding-top: 2%;
     padding-bottom: 3%;
 }
 
 .peppermill_intro {
-    margin-top: 5%;
+    margin-top: 2vw;
 }
 
 #peppermill_sketches {
@@ -1973,29 +2042,32 @@ p {
     align-items: center;
 }
 
-.slide_peppermill_history {
-    background-image: url("peppermill_history.png");
-    background-size: 100%; 
-    background-position: 50% -50%; 
-    background-repeat: no-repeat;
-    position: relative;
-    display: block; 
-    width: 60vw;
-    height: 35vw;
-    margin-top: 2vw;
-    margin-bottom: 0vw;
-}
-
 .history_description {
-    width: 30vw;
-    height: 35vw;
+    width: 45vw;
+    height: 6vw;
     margin-top: 2vw;
     margin-bottom: 0vw;
     align-items: center;
     text-align: left;
-    font-size: 1.6vw;
+    font-size: 2vw;
     line-height: 2.2vw;
-    font-weight: 500; 
+    font-weight: bold; 
+    /* background-color: #EF6255; */
+} 
+
+.slide_peppermill_history {
+    background-image: url("peppermill_history.png");
+    background-size: 100%; 
+    background-position: 70% 50%; 
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex; 
+    width: 40vw;
+    height: 30vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    background-color: white;
+
 }
 
 .slide_final_peppermill {
@@ -2005,47 +2077,79 @@ p {
     background-repeat: no-repeat;
     position: relative; 
     display: block; 
-    width: 50vw; 
-    height: 40vw;
+    width: 45vw; 
+    height: 30vw;
     margin-top: 2vw;
     margin-bottom: 0vw;
+    background-color: white;
 }
 
 .final_peppermill_description {
-    width: 40vw;
-    height: 40vw;
+    width: 45vw;
+    height: 6vw;
     margin-top: 2vw;
     margin-bottom: 0vw;
     align-items: center;
     text-align: left;
-    font-size: 1.6vw;
+    font-size: 2vw;
     line-height: 2.2vw;
-    font-weight: 500; 
+    font-weight: bold; 
+    /* background-color: #EF6255; */
+
 }
 
 .slide_peppermill_foam {
-    background-image: url("peppermill_foam_mockup.jpg");
-    background-size: 100%; 
-    background-position: 50% 50%; 
+    background-image: url("foam_mockup.png");
+    background-color:black ;
+    background-size: 110%; 
+    background-position: 70% 50%; 
     background-repeat: no-repeat;
     position: relative;
-    display: block; 
-    width: 45vw;
-    height: 60vw;
-    margin-top: 2vw;
-    margin-bottom: 5vw;
+    display: flex; 
+    width: 40vw;
+    height: 35vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    
 }
 
 .foam_description {
     width: 45vw;
-    height: 60vw;
+    height: 6vw;
     margin-top: 2vw;
-    margin-bottom: 5vw;
+    margin-bottom: 0vw;
+    align-items: center;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 2.2vw;
+    font-weight: bold; 
+    /* background-color: #EF6255; */
+}
+
+.slide_peppermill_render {
+    position: relative;
+    background-image: url("peppermill_render_transparent.png");
+    background-size: 90%;
+    background-position: 120% 40%;
+    background-repeat: no-repeat;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    height: 35vw;
+    width: 45vw;
+    /* background-color: #EF6255; */
+}
+
+.render_description {
+    width: 60vw;
+    height: 45vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
     align-items: center;
     text-align: left;
     font-size: 1.6vw;
     line-height: 2.2vw;
     font-weight: 500; 
+    background-color: #EF6255;
 }
 
 /* #peppermill_foam {
@@ -2105,7 +2209,7 @@ p {
 #email {
     position: fixed; 
     display: block;
-    right: 15%;
+    right: 25%;
     width: 10%;
     height: 50px; 
     font-family: sans-serif;
@@ -2125,7 +2229,7 @@ p {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    right: 10%;
+    right: 15%;
     width: 10%;
     height: 38px;
     margin-top: 6px;
