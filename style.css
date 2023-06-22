@@ -1191,27 +1191,6 @@ p {
     margin-top: 2vw;
 }
 
-/* .foam_prototype_description {
-    position: relative;
-    width: 20vw;
-    background-size: 150%;
-    background-position: 50% 50%;
-    margin-left: 1vw;
-    background-color: azure;
-    border-radius: 10px 0px 0px 10px;
-}
-
-.foam_prototype {
-    position: relative;
-    background-image: url("foam_prototype.JPG");
-    width: 20vw;
-    height: 20vw;
-    background-size: 175%; 
-    background-position: 50% 50%;
-    margin-right: 3vw;
-    border-radius: 0px 10px 10px 0px;
-} */
-
 .sketch_prototype_description {
     position: relative;
     width: 50vw;
@@ -1507,7 +1486,7 @@ p {
 .slide_rotationgame {
     background-image: url("rotation_game_render.gif");
     background-position: 50% 50%;
-    background-size: 105%;
+    background-size: 137%;
     position: relative;
     display: block; 
     width: 44vw;
@@ -1601,6 +1580,60 @@ p {
     margin-top: 0vw;
     margin-bottom: 2vw;
     /* background-color: aquamarine; */
+}
+
+.market_description {
+    width: 42vw;  
+    height: 25vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left;
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+    font-weight: 500;
+}
+
+.slide_market {
+    background-image: url("fieldtrip_beachhead_market.png");
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: relative; 
+    display: block;  
+    width: 48vw;
+    height: 30vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+}
+
+.growth_description {
+    width: 44vw;  
+    height: 25vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    border-radius: 15px;
+    align-items: center;
+    text-align: left; 
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+    font-weight: 500;
+}
+
+.slide_growth {
+    background-image: url("fieldtrip_projected_growth.png");
+    background-color: #EF6255;
+    background-size: 100%;
+    background-position: 50% 50%; 
+    position: relative; 
+    display: block;   
+    width: 46vw;
+    height: 26vw;
+    margin-top: 2vw;
+    margin-bottom: 0vw;
+    border-radius: 10px; 
+
 }
 
 .slide14 {
