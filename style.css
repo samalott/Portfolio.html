@@ -209,7 +209,7 @@ p {
     background-image: url("accessibility_thumbnail.png");
     background-color: cornflowerblue;
     background-position: 50%;
-    background-size: 50%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -2099,17 +2099,16 @@ p {
     display: block;  
     width: 48%;
     height: 25vw;
-    margin-left: 2vw;
+    margin-left: 45vw;
     margin-right: 1vw; 
     margin-top: 2%;
     margin-bottom: 3%;
     font-size: 1.5vw;
     line-height: 2.25vw;
-    text-align: left;
 }
 
 #restaurant_app_wireframe {
-    position: relative;
+    position: absolute;
     display: block;
     background-image: url("restaurant_app_wireframe.jpg");
     background-color:floralwhite;
@@ -2128,6 +2127,31 @@ p {
     border-color: white;
 }
 
+#restaurant_app_wireframe:active, #restaurant_app_wireframe:focus {
+    height: 60vw;
+    width: 90vw;
+    background-position: 50% 64%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-style: none;
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
+#google_map_final_solution {
+    position: relative;
+    background-color:rgb(0, 0, 0);
+    color:honeydew;
+    margin-top: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 4vw;
+}
+
 #app_concept_flex {
     position: relative;
     display: flex;  
@@ -2136,19 +2160,10 @@ p {
     flex-flow: row wrap;
 }
 
-#google_map_final_solution {
-    background-color:rgb(0, 0, 0);
-    color:honeydew;
-    margin-top: 4vw;
-    padding-top: 2vw;
-    padding-bottom: 4vw;
-}
-
 .app_concept_description {
     position: relative;
     display: block;  
     width: 58%;
-    height: 25vw;
     margin-left: 2vw;
     margin-right: 2vw; 
     margin-top: 4%;
@@ -2159,7 +2174,7 @@ p {
     text-align: justify;
 }
 
-.gif_walkthrough {
+#gif_walkthrough {
     background-image: url("Google_accessibility_walkthrough.gif");
     background-position: 50% 64%;
     background-size: 475%;
@@ -2173,7 +2188,22 @@ p {
     margin-bottom: 2vw;
     border-radius: 3vw;
     align-items: center;
+    border: none;
 }
+
+#gif_walkthrough:active, #gif_walkthrough:focus {
+    height: 80vh;
+    width: 90vw;
+    background-position: 50% 64%;
+    background-size: 200%;
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+}
+
 
 #accessibility_render {
     position: relative;
